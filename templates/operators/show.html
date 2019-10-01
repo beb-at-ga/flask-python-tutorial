@@ -1,0 +1,14 @@
+{% extends 'base.html' %} {% block content %}
+<h1>All About {{ operator.name }}</h1>
+<h2>{{ operator.symbol }}</h2>
+
+<p>{{ operator.description }}</p>
+<p>{{ operator.usage }}</p>
+<pre>
+  <code>
+    {{ operator.example }}
+  </code>
+</pre>
+
+{% endblock %}
+
